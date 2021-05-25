@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Mark Fisher Cyberfield</title>
+  <!--CSS styling for .myClass text blocks to add and style frames and determine font style and colour. Styling for images, background images and tables also included below-->
+  <style>
+	
+	.myClass {background-color: rgb(186, 255, 193);font-size:25px;font-weight: bold;font-family: 'Courier New', monospace; border: 3px solid rgb(186, 255, 193);
+            border-style: groove;}
+	
+	.myClass3 {background-color: rgb(186, 255, 193);font-size:15px;font-weight: bold;font-family: 'Courier New', monospace; border: 3px solid rgb(186, 255, 193);
+            border-style: groove;}
+	
+	img {
+            border: 6px solid rgb(186, 255, 193);
+            border-style: groove;
+        }
+
+	
+	body {
+            background-image: url("lOXvRlFblue.jpg");
+        }
+	
+	table, th, td {
+		border: 4px solid rgb(186, 255, 193);	
+		border-style: groove;
+	}
+
+   
+   
+   </style>
+  
+  </head>
+
+  <body>
+	<!--bootstrap grid system to make site responsive-->
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mx-auto text-center myClass">Mark Fisher Cyberfield</div>		
+		</div>
+		<br>	
+		<div class="row">
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 mx-auto text-center myClass3">Home Page</div>		
+		</div>
+		<br>
+		<div class="row">
+		<!--Button to play music on site-->
+		<div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 mx-auto text-center myClass2"><audio controls autoplay>
+		 <source src="landslidesremaster2.mp3" type="audio/mpeg">
+		 </audio> </div>
+		</div>
+		<br>
+		<div class="row">
+		<!--Main GIF moving image on site homepage-->
+		<div class="col-xl-12 col-lg-10 col-md-8 col-sm-6 col-4 mx-auto text-center myClass2"><img src="GedGef.gif" class="img-fluid"></div>
+		</div>
+		<br>
+		<div class="row">
+	
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center myClass5"><a href="Video Archive.html"><button>[o]Video Archive[o]</button></a> </div>	
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center myClass4"><a href="Music.html"><button>♫Music♫</button></a> </div>	
+			
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center myClass5"><a href="http://k-punk.abstractdynamics.org/"><button>✍K-Punk Blog✍</button></a> </div>	
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-center myClass5"><a href="Cybershop.html"><button>|#/Cyber shop|#/</button></a> </div>	
+		</div>
+		<br>
+		<div class="row">
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mx-auto text-center myClass2"><img src="GedGef32.gif" width="200" height="100px" class="img-fluid"></div>
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mx-auto text-center myClass2"><img src="GedGef4.gif" width="200" height="100px" class="img-fluid"></div>
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mx-auto text-center myClass2"><img src="newtest1.gif" width="200" height="100px" class="img-fluid"></div>
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mx-auto text-center myClass2"><img src="GedGef2.gif" width="200" height="100px" class="img-fluid"></div>
+		
+		
+		</div>
+		</div>
+		<br>
+</body>
+
+<script>
+
+var i = 0;
+
+function randomFlash() {
+    var myFunction = function() {
+    	if (i % 2 == 0) {
+		document.body.style.backgroundImage = "url('lOXvRlFbluescript.jpg')";
+		var random = 100;				
+        } else {
+          	document.body.style.backgroundImage = "url('lOXvRlFblue.jpg')";
+		var random = Math.round(Math.random() * (5500 - 500)) + 500;
+        }
+        i++;
+        setTimeout(myFunction, random);
+    }
+    myFunction();
+}
+
+randomFlash();
+
+</script>
